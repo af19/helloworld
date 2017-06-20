@@ -1,0 +1,115 @@
+/******************************
+GENERAL
+******************************/
+body {
+  padding: 25px;
+  margin: 0 auto;
+  max-width: 960px; }
+
+p, a {
+  font-family: 'Arvo', serif; }
+
+p {
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 1em;
+  line-height: 150%;
+  margin: 25px 0; }
+
+.capital {
+  letter-spacing: normal;
+  -moz-font-feature-settings: "smcp" 1, "c2sc" 1;
+  -moz-font-feature-settings: "smcp=1, c2sc=1";
+  -ms-font-feature-settings: "smcp" 1, "c2sc" 1;
+  -o-font-feature-settings: "smcp" 1, "c2sc" 1;
+  -webkit-font-feature-settings: "smcp" 1, "c2sc" 1;
+  font-feature-settings: "smcp" 1, "c2sc" 1; }
+
+/******************************
+HEADER
+******************************/
+header {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.65);
+  font-family: 'Arvo', serif;
+  font-size: 1em; }
+
+/******************************
+FOOTER
+******************************/
+footer {
+  border-top: 2px solid #ddd;
+  padding-top: 25px; }
+  footer a {
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(128, 128, 128, 0.65);
+    color: #000; }
+    footer a:visited {
+      color: #000; }
+    footer a:hover {
+      color: #45812b; }
+  footer a {
+    text-decoration: none;
+    font-size: 1.25em;
+    font-family: "franklin-gothic-urw", sans-serif;
+    font-weight: 500;
+    border: none;
+    text-align: left;
+    /*    text-transform: uppercase;
+    */
+    /*letter-spacing: .1em;*/ }
+  footer div {
+    padding: 7px 0 25px; }
+    footer div a {
+      font-size: .8rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: .1em; }
+    footer div a:nth-child(2) {
+      padding: 0 22px; }
+  footer p {
+    margin: 0;
+    font-size: .9em; }
+
+/******************************
+MAIN
+******************************/
+main {
+  margin: 0 auto;
+  max-width: 590px; }
+  main a {
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(128, 128, 128, 0.65);
+    color: #000; }
+    main a:visited {
+      color: #000; }
+    main a:hover {
+      color: #45812b; }
+
+h1 {
+  color: rgba(38, 38, 38, 0.85);
+  font-size: 3.5em;
+  text-align: center;
+  margin: 95px 0;
+  font-family: "Old Standard TT",serif;
+  font-style: bold; }
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.75em;
+  padding: 25px 0 10px;
+  color: rgba(38, 38, 38, 0.85); }
+
+section:nth-child(1) {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 25px; }
+
+section:nth-child(2) {
+  padding-top: 50px;
+  margin-bottom: 70px; }
+
+article {
+  padding-bottom: 25px; }
+
+/*# sourceMappingURL=main.css.map */
