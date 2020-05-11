@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Arvo|Old+Standard+TT:700|Open+Sans:600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,400;0,500;0,600;1,600&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="manifest.json" />
@@ -12,11 +12,22 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
-    <header>
-      Amir Farzan<span class="capital">, UI Developer</span>
-    </header>
-    <main>
-      <section>
+    <div class="navigation-dots">
+      <div id="navigation-dot-intro" class="active"></div>
+      <div id="navigation-dot-staples"></div>
+      <div id="navigation-dot-crushing-it"></div>
+      <div id="navigation-dot-lemonsync"></div>
+      <div id="navigation-dot-footer"></div>
+    </div>
+    <div class="wrapper">
+      <section id="intro">
+        <header>
+          <img src="img/avatar.jpg">
+          <p class="title">
+            Amir Farzan
+            <span>UI Developer</span>
+          </p>
+        </header>
         <h1>Hello</h1>
         <p>My name is Amir &mdash; a UI Developer based in Vancouver.</p> 
         <p>Currently I&rsquo;m working at 
@@ -24,49 +35,87 @@
           where my team and I create enterprise-level web applications used by some of the world&rsquo;s largest retailers for 
           personalized print and marketing solutions.
         </p>
-        <p>In my spare time I enjoy exercising, meditation, drinking good coffee, and more! Please <a href="mailto:amirfarzan@me.com">get in touch</a> if you have any questions or&nbsp;inquires.</p>
+        <p>In my spare time I enjoy exercising, meditation, drinking good coffee, and more! Please <a href="mailto:amirfarzan@me.com">get&nbsp;in&nbsp;touch</a> if you have any questions or&nbsp;inquires.</p>
+        <div class="scroll-indicator bounce"><span>work</span><sapn class="emoji">👇</sapn></div>
       </section>
-      <section>
-        <article>
-          <h2>Staples Document Printing</h2>
+      <section id="staples">
+        <h2>Staples Document Printing</h2>
           <p>
             Staples online document printing service is used by millions of customers in the US. The service helps users upload 
             and customize their print files using the interactive Document Builder web app. 
           </p>
           <p>
-            Contribution: worked closely with product designers and backend developers to implement the frontend layer of the 
+            <strong>Contribution:</strong> worked closely with product designers and backend developers to implement the frontend layer of the 
             application.
           </p>
-          <p>Tools used: AngularJS, SCSS, HTML, NPM, Azure DevOps, InVision.</p>
-          <p><a href="https://www.staples.com/services/printing/copies-documents-printing" target="_blank">Visit the site →</a></p>
-        </article>
-        <article>
-          <h2>Crushing It! App</h2>
-          <p>Crushing It! is a realtime voting and random draw mobile web app developed for internal use at PNI Media.</p>
-          <p>Contribution: design and development lead.</p>
-          <p>Tools used: React, DynamoDB, Firebase Realtime Database, Heroku.</p>
-          <p>
-            <a href="mailto:amirfarzan@me.com?subject=Crushing%20It!%20Demo">Request a demo →</a>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://github.com/af19/crushing-it" target="_blank">View code →</a>
-          </p>
-        </article>
-        <article>
-          <h2>Grunt LemonSync (deprecated)</h2>
-          <p>A grunt plugin for working on LemonStand eCommerce platform (acquired by Mailchimp) themes locally and pushing changes to stores.</p>
-          <p>Contribution: design and development lead.</p>
-          <p>Tools used: LemonStand API, AWS Node.js SDK, Babel, NPM, GitHub.</p>
-          <p><a href="https://www.npmjs.com/package/grunt-lemonsync" target="_blank">View code →</a></p>
-        </article>
+          <p><strong>Tools used:</strong> AngularJS, SCSS, HTML, NPM, Azure DevOps, InVision.</p>
+          <a href="https://www.staples.com/services/printing/copies-documents-printing" target="_blank">Visit the site →</a>
       </section>
-    </main>
-    <footer>
-      <p>&copy; <span id="copyright"></span> Amir Farzan Fakhimi</p>
-    </footer>
+      <section id="crushing-it">
+        <h2>Crushing It!</h2>
+          <p>Crushing It! is a realtime voting and random draw mobile web app developed for internal use at PNI Media.</p>
+          <p><strong>Contribution:</strong> design and development lead.</p>
+          <p><strong>Tools used:</strong> React, DynamoDB, Firebase Realtime Database, Heroku.</p>
+          <a href="mailto:amirfarzan@me.com?subject=Crushing%20It!%20Demo">Request a demo →</a>
+          <a class="second-link" href="https://github.com/af19/crushing-it" target="_blank">View code →</a>
+      </section>
+      <section id="lemonsync">
+        <h2>Grunt LemonSync (deprecated)</h2>
+          <p>A grunt plugin for working on LemonStand eCommerce platform (acquired by Mailchimp) themes locally and pushing changes to stores.</p>
+          <p><strong>Contribution:</strong> design and development lead.</p>
+          <p><strong>Tools used:</strong> LemonStand API, AWS Node.js SDK, Babel, NPM, GitHub.</p>
+          <a href="https://www.npmjs.com/package/grunt-lemonsync" target="_blank">View code →</a>
+      </section>
+      <footer id="footer">
+        <blockquote cite="https://www.linkedin.com/in/amirfarzan/">
+          <p>I have been fortunate to work alongside and manage Amir for three years. Amir is pragmatic and curious, traits that make him an extraordinary developer. He tends to be the voice of reason during discussions around troubleshooting a problem or brainstorming ideas, asking the right questions that keep the conversation moving in the right direction.
+          </p>
+          <a href="https://www.linkedin.com/in/amirfarzan/" target="_blank">Continued on LinkedIn →</a>
+          <footer>
+              <img src="img/carlos.jpg">
+              <p class="title">Carlos Lavara
+              <span>Technical Development Manager at PNI Digital Media Ltd.</span></p>
+          </footer>
+
+        </blockquote>
+      </footer>
+    </div>
+
     <script type="text/javascript">
-      var date = new Date();
-      var copyright_year = date.getFullYear();
-      document.getElementById('copyright').innerHTML = copyright_year;
+
+      const wrapper = document.querySelector(".wrapper");
+      const sectionIntro = document.getElementById("intro");
+      const sectionStaples = document.getElementById("staples");
+      const sectionCrushingIt = document.getElementById("crushing-it");
+      const sectionLemonsync = document.getElementById("lemonsync");
+      const sectionFooter = document.getElementById("footer");
+      const dotIntro = document.getElementById("navigation-dot-intro");
+      const dotStaples = document.getElementById("navigation-dot-staples");
+      const dotCrushingIt = document.getElementById("navigation-dot-crushing-it");
+      const dotLemonsync = document.getElementById("navigation-dot-lemonsync");
+      const dotFooter = document.getElementById("navigation-dot-footer");
+      function resetActive(section) {
+        const activeDot = document.querySelector(".active");
+        activeDot.classList.remove("active");
+        section.classList.add("active");
+      }
+      wrapper.addEventListener("scroll", (e) => {
+        if (e.target.scrollTop === sectionIntro.offsetTop) {
+          resetActive(dotIntro);
+        }
+        if (e.target.scrollTop === sectionStaples.offsetTop) {
+          resetActive(dotStaples);
+        }
+        if (e.target.scrollTop === sectionCrushingIt.offsetTop) {
+          resetActive(dotCrushingIt);
+        }
+        if (e.target.scrollTop === sectionLemonsync.offsetTop) {
+          resetActive(dotLemonsync);
+        }
+        if (e.target.scrollTop > sectionLemonsync.offsetTop) {
+          resetActive(dotFooter);
+        }
+      });
     </script>
   </body>
 </html>
