@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="manifest" href="manifest.json" />
     <script src="https://cdn.rawgit.com/GoogleChrome/pwacompat/v1.0.3/pwacompat.min.js"></script>
-    <title>Portfolio | Amir Farzan, Design &amp; Development</title>
+    <title>Portfolio | Amir Farzan, Software Engineer</title>
     <meta name="theme-color" content="#fff" />
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -15,7 +15,6 @@
     <div class="navigation-dots">
       <div id="navigation-dot-intro" class="active"></div>
       <div id="navigation-dot-staples"></div>
-      <div id="navigation-dot-crushing-it"></div>
       <div id="navigation-dot-lemonsync"></div>
       <div id="navigation-dot-footer"></div>
     </div>
@@ -25,38 +24,42 @@
           <img src="img/avatar.jpg">
           <p class="title">
             Amir Farzan
-            <span>UI Developer</span>
+            <span>Software Engineer</span>
           </p>
         </header>
         <h1>Hello</h1>
-        <p>My name is Amir &mdash; a UI Developer based in Vancouver.</p> 
+        <p>My name is Amir. I am a Senior Software Engineer based in Vancouver.</p> 
         <p>Currently I&rsquo;m working at 
           <a href="https://www.pnimedia.com/" target="_blank">PNI Digital Media</a>, 
           where my team and I create enterprise-level web applications used by some of the world&rsquo;s largest retailers for 
           personalized print and marketing solutions.
         </p>
-        <p>In my spare time I enjoy exercising, meditation, drinking good coffee, and more! Please <a href="mailto:amirfarzan@me.com">get&nbsp;in&nbsp;touch</a> if you have any questions or&nbsp;inquires.</p>
+        <p>In my spare time I enjoy exercising, LEGOs, drinking good coffee, and more! Please <a href="mailto:amirfarzan@me.com">get&nbsp;in&nbsp;touch</a> if you have any questions or&nbsp;inquires.</p>
         <div class="scroll-indicator bounce"><span>work</span><sapn class="emoji">👇</sapn></div>
       </section>
-      <section id="staples">
-        <h2>Staples Document Printing</h2>
-          <p>
-            Staples online document printing service is used by millions of customers in the US. The service helps users upload 
-            and customize their print files using the interactive Document Builder web app. 
-          </p>
-          <p>
-            <strong>Contribution:</strong> worked closely with product designers and backend developers to implement the frontend layer of the 
-            application.
-          </p>
-          <p><strong>Tools used:</strong> AngularJS, SCSS, HTML, NPM, Azure DevOps, InVision.</p>
-          <a href="https://www.staples.com/services/printing/copies-documents-printing" target="_blank">Visit the site →</a>
-      </section>
-      <section id="crushing-it">
-        <h2>Station Creative</h2>
-          <p>Station Creative is a headless WordPress website developed for internal use at PNI Media.</p>
-          <p><strong>Contribution:</strong> frontend and backend development.</p>
-          <p><strong>Tools used:</strong> React, GatsbyJS, WordPress, Azure App Service.</p>
-          <a href="https://www.wearestation.ca/" target="_blank">Visit the site →</a>
+      <section>
+        <h2>Staples Print & Marketing Services</h2>
+        <p>
+          Staples Print & Marketing Services powers a wide range of customizable print products used by millions of customers across the U.S. 
+          The platform delivers everything from document printing to posters, banners, business cards, and more — all through a modern 
+          Next.js-powered experience integrated with Bloomreach CMS.
+        </p>
+        <p>
+          <strong>Contribution:</strong> Leading the front-end development and modernization of the platform, including migrating legacy 
+          .NET-driven experiences to a fully React/Next.js architecture. Responsible for building high-performance, accessible user interfaces, 
+          improving reliability across multi-instance environments, implementing SEO automation pipelines powered by Azure OpenAI, integrating 
+          CMS-driven content with Bloomreach SPA/React SDKs, and collaborating closely with product, design, and backend teams to deliver 
+          new customer-facing features.
+        </p>
+      
+        <p>
+          <strong>Tools & tech:</strong> Next.js, React, TypeScript, SCSS, Bloomreach Content SaaS, Azure App Service, Docker, 
+          Azure DevOps (CI/CD), Application Insights, REST APIs, OpenAI (Azure), Node.js, Git.
+        </p>
+      
+        <a href="https://www.staples.com/services/printing/" target="_blank">
+          Visit the site →
+        </a>
       </section>
       <section id="lemonsync">
         <h2>Grunt LemonSync (deprecated)</h2>
@@ -85,7 +88,6 @@
       const wrapper = document.querySelector(".wrapper");
       const sectionIntro = document.getElementById("intro");
       const sectionStaples = document.getElementById("staples");
-      const sectionCrushingIt = document.getElementById("crushing-it");
       const sectionLemonsync = document.getElementById("lemonsync");
       const sectionFooter = document.getElementById("footer");
       const dotIntro = document.getElementById("navigation-dot-intro");
@@ -104,9 +106,6 @@
         }
         if (e.target.scrollTop === sectionStaples.offsetTop) {
           resetActive(dotStaples);
-        }
-        if (e.target.scrollTop === sectionCrushingIt.offsetTop) {
-          resetActive(dotCrushingIt);
         }
         if (e.target.scrollTop === sectionLemonsync.offsetTop) {
           resetActive(dotLemonsync);
